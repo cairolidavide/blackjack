@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="blackjackStyle.css">
+    <title>BlackJack</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="computer">
+            <h2 class="computer-name">Banco:</h2>
+            <div id="computer-points"></div>
+            <div id="computer-cards" class="row computer-cards">
+                
+            </div>
+        </div>
+        <div class="player">
+            <h2 class="player-name">Giocatore:</h2>
+            <div id="points"></div>
+            <div id="my-cards" class="row my-cards">
+                
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center commands">
+            <button id="start" class="start btn btn-light">START GAME</button>
+            <button id="get-card" class="get-card btn btn-light">CHIEDI CARTA</button>
+            <button id="rest" class="rest btn btn-light">RESTA</button>
+        </div>
+        <div id="result" class="result-hidden">
+
+        </div>
+    </div>
+    <script src="card.js"></script>
+    <script src="deck.js"></script>
+    <script src="player.js"></script>
+    <script src="computer.js"></script>
+    <script src="blackjackScript.js"></script>
+</body>
+</html>
